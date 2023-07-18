@@ -14,6 +14,7 @@
 :root {
   --main-color: #008148;
   --second-color: #1e3932;
+  --third-color: #ebdbc8;
 }
 *::selection {
   color: #fff;
@@ -67,13 +68,14 @@ header {
 .navbar a:hover {
   color: var(--main-color);
 }
+/* home */
 .home {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background: #ebdbc8;
+  background: var(--third-color);
   gap: 1rem;
 }
 .home {
@@ -124,4 +126,69 @@ header {
 .btn:hover {
   color: #fff;
   background: var(--second-color);
+}
+/* shop  */
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--second-color);
+}
+.heading h1 {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.shop-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.shop-container .box {
+  flex: 1 1 10rem;
+  background: var(--main-color);
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+}
+.shop-container .box .box-img {
+  width: 150px;
+  height: 150px;
+  margin-top: -100px;
+}
+.shop-container .box .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.stars {
+  margin: 1rem 0 0.1rem;
+}
+.shop-container .box .stars .bx {
+  color: var(--third-color);
+}
+.shop-container .box span {
+  color: var(--third-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0.2rem 0 0.5rem;
+}
+.box .btn {
+  border: 2px solid var(--third-color);
+  color: var(--third-color);
+}
+.box .btn:hover {
+  background: var(--third-color);
+  color: var(--second-color);
 }
